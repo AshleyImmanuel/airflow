@@ -1892,7 +1892,7 @@ class TestDagFileProcessorManager:
                                 TaskHandlerDeclaration(
                                     task_id="extract",
                                     binding="positional",
-                                    params=[TaskHandlerParam(name=None, required=True)],
+                                    params=[TaskHandlerParam(name=None)],
                                 )
                             ]
                         },
@@ -1919,7 +1919,6 @@ class TestDagFileProcessorManager:
                                             {
                                                 "name": None,
                                                 "value_schema": None,
-                                                "required": True,
                                                 "exact_name": False,
                                             }
                                         ],
@@ -4191,7 +4190,7 @@ def _known_artifact(bundle_name: str) -> TaskHandlerArtifact:
                 TaskHandlerDeclaration(
                     task_id="extract",
                     binding="positional",
-                    params=[TaskHandlerParam(name=None, required=True)],
+                    params=[TaskHandlerParam(name=None)],
                 )
             ]
         },
@@ -4452,7 +4451,7 @@ class TestKnownTaskHandlerArtifacts:
                         {
                             "task_id": "extract",
                             "binding": "positional",
-                            "params": [{"name": None, "required": True}],
+                            "params": [{"name": None}],
                         }
                     ]
                 },
