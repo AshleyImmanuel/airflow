@@ -540,7 +540,8 @@ All ``kwargs`` in the ``coordinators`` config entry are passed to the
     pinned to the version the run was created with.
   * Set ``dag_bundle_name`` to keep bundles in a separate Dag bundle, for example one per
     ``ExecutableCoordinator`` when you configure more than one. The task uses the version that Dag
-    bundle is on when it starts, pinned for the whole task.
+    bundle is on when it starts, pinned for the whole task. If it names the task's own Dag bundle, the
+    task uses the version the run was created with.
 
 .. _go-sdk/limitations:
 
